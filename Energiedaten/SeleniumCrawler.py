@@ -23,7 +23,7 @@ for x in range (0, numdays):
     adjDateList.append(dateList[x].strftime('%d').lstrip('0') + '.' + dateList[x].strftime('%m').strip('0') + '.' + dateList[x].strftime('%y'))
 b = adjDateList[1]
 
-with open('Energiedaten.csv', 'w', newline = '') as f:
+with open('Energiedaten.csv', 'w', newline ='') as f:
     Header = ['Immobilie', 'Datum', 'Energietyp', 'Verbrauch']
     thewriter = csv.DictWriter(f, fieldnames=Header)
     thewriter.writeheader()
